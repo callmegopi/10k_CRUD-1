@@ -1,5 +1,4 @@
 function validate() {
-  console.log('you just pressed a key');
   var formvalid = true;
   for (a in person) {
     let userInput = document.getElementById(a).value;

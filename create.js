@@ -4,7 +4,8 @@ var person = {
   email: '',
 };
 
-var persons = [];
+// var persons = [];
+var persons = JSON.parse(localStorage.getItem('persons'));
 
 function createPerson() {
   for (a in person) {
@@ -14,7 +15,8 @@ function createPerson() {
   // Create a copy of person
 
   persons.push({ ...person });
-
+  var convertedPersons = JSON.stringify(persons);
+  localStorage.setItem('persons', convertedPersons);
   clear();
   displayPersons();
   validate();
