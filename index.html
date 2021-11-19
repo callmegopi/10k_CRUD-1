@@ -54,8 +54,18 @@
               class="btn btn-primary"
               onclick="createPerson()"
               disabled="true"
+              id="submit"
             >
               Submit
+            </button>
+            <button
+              type="button"
+              onclick="updatePerson()"
+              class="btn btn-primary"
+              style="display: none"
+              id="update"
+            >
+              Update
             </button>
           </form>
         </div>
@@ -80,5 +90,8 @@
     <script src="display.js"></script>
     <script src="clear.js"></script>
     <script src="validate.js"></script>
+    <script src="editPerson.js"></script>
+    <script src="deletePerson.js"></script>
+    <script src="updatePerson.js"></script>
   </body>
 </html>
